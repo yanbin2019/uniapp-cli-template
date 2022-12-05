@@ -1,0 +1,48 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [
+		{
+			"path": "pages/home/index",
+			"name": "home",
+			"remark": "文件列表"
+		},
+		{
+			"path": "pages/404/404",
+			"name": "404",
+			"remark": "404页面"
+		},
+		{
+			"path": "pages/mine/index",
+			"name": "mine",
+			"remark": "我的"
+		}
+	],
+	"tabBar": {
+		"borderStyle": "black",
+		"backgroundColor": "#c22a2a2a",
+		"color": "#FF595959",
+		"selectedColor": "#ECC95F",
+		"list": [
+			{
+				"pagePath": "pages/home/index",
+				"iconPath": "static/tabBar/home.png",
+				"selectedIconPath": "static/tabBar/home_select.png",
+				"text": "文件"
+			},
+			{
+				"pagePath": "pages/mine/index",
+				"iconPath": "static/tabBar/mine.png",
+				"selectedIconPath": "static/tabBar/mine_select.png",
+				"text": "我的"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationStyle": "custom",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#ffffff"
+	}
+}

@@ -1,0 +1,7 @@
+//主要背景色
+//--main-bg-color是js变量名，可通过：document.getElementsByTagName('body')[0].style.setProperty('--main-bg-color', 'red');进行改变
+$main-bg-color: var(--main-bg-color,$uni-bg-color);
+//主要文字颜色
+$main-text-color:var(--main-text-color,$uni-text-color);
+//主要辅助颜色
+$main-help-color:var(--main-help-color,$uni-help-color)

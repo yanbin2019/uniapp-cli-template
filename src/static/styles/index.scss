@@ -1,0 +1,37 @@
+@import './validate.scss';
+@import './common.scss';
+
+uni-page-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background-color: $main-bg-color;
+}
+
+page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background-color: $main-bg-color;
+}
+
+.app-content {
+  height: 100%;
+  flex: 1;
+  background: $main-bg-color;
+}
+
+image {
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.u-image {
+  width: 100%;
+  height: 100%;
+}
