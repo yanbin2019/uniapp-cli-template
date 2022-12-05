@@ -1,20 +1,18 @@
 <template>
   <div class="app-content">
-    <y-navbar v-bind="handelAttr" v-if="navShow"></y-navbar>
-    <!-- <Title></Title> -->
+    <Navbar v-bind="handelAttr" v-if="navShow"></Navbar>
     <slot></slot>
-    <y-tabbar v-if="tabShow"></y-tabbar>
+    <Tabbar v-if="tabShow"></Tabbar>
   </div>
 </template>
 
 <script>
 import { navbar } from '@/components/props/navbar.js'
-import yNavbar from '@/components/y-navbar/y-navbar'
-import yTabbar from '@/components/y-tabbar/y-tabbar'
-import Title from '@/components/y-title/y-title'
+import Navbar from '@/components/y-navbar/y-navbar'
+import Tabbar from '@/components/y-tabbar/y-tabbar'
 export default {
   name: '',
-  components: { yNavbar, yTabbar, Title },
+  components: { Navbar, Tabbar },
   props: {
     ...navbar,
     tabShow: {

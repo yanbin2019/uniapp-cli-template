@@ -1,15 +1,14 @@
 <template>
   <y-layout tabShow :leftShow="false">
-    <view class="main"> </view>
+    <view class="main"> 11</view>
   </y-layout>
 </template>
 
 <script>
-import Test from './test'
-import Title from '@/pages/components/title'
+
 export default {
   name: '',
-  components: { Test, Title },
+  components: {},
   props: {},
   data() {
     return {}

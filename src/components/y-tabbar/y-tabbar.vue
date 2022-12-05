@@ -3,11 +3,10 @@
     :value="$Route.path"
     @change="change"
     :fixed="true"
-    :border="false"
     :placeholder="true"
     :safeAreaInsetBottom="true"
-    inactiveColor="#595959"
-    activeColor="#ECC95F"
+    inactiveColor="#000000CC"
+    activeColor="#003BAFFF"
   >
     <u-tabbar-item
       v-for="(item, index) in list"
@@ -38,7 +37,7 @@ export default {
     return {
       list: [{
         name: '/pages/home/index',
-        text: '文件',
+        text: '首页',
         url: '/pages/home/index',
         iconPath: '/static/tabBar/home.png',
         selectedIconPath: '/static/tabBar/home_select.png'
@@ -69,11 +68,5 @@ export default {
 .u-page__item__slot-icon {
   width: 36rpx;
   height: 36rpx;
-}
-::v-deep .u-tabbar__content {
-  background: rgba(42, 42, 42, 0.76);
-  box-shadow: 0px 1rpx 4rpx 0px rgba(0, 0, 0, 0.2);
-  /* border-radius: 20px 20px 0px 0px; */
-  backdrop-filter: blur(4rpx);
 }
 </style>
