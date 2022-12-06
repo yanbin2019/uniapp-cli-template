@@ -8,19 +8,11 @@ import {
 	toast
 } from '@/utils/common'
 import errorCode from '@/utils/errorCode'
-import {
-	baseUrl,
-	baseApi
-}
-from '@/config.js'
+
 
 let timeout = 10000
 // #ifdef H5
-const requestBaseUrl = baseApi
-// #endif
-
-// #ifndef H5
-const requestBaseUrl = baseUrl
+const requestBaseUrl = process.env.VUE_APP_BASE_API
 // #endif
 
 
@@ -65,16 +57,7 @@ const request = config => {
 							url: '/pages/whiteList/login/index'
 						})
 					})
-					// showConfirm('登录状态已过期，您可以继续留在该页面，或者重新登录?').then(res => {
-					//     if (res.confirm) {
-					//         store.dispatch('LogOut').then(res => {
-					//             uni.reLaunch({
-					//                 url: '/pages/login'
-					//             })
-					//         })
-					//     }
-					// })
-					// reject('无效的会话，或者会话已过期，请重新登录。')
+					reject('无效的会话，或者会话已过期，请重新登录。')
 				} else if (code === 500) {
 					toast(msg)
 					reject('500')

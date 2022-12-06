@@ -1,4 +1,4 @@
-# chain-offer-h5
+# uniapp通用模板
 
 ## Project setup
 ```

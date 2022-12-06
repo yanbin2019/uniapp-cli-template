@@ -1,5 +1,5 @@
 {
-	"name": "web3加密金库",
+	"name": "uniapp工程化模板",
 	"appid": "__UNI__05D0406",
 	"description": "",
 	"versionName": "1.0.2",
@@ -16,9 +16,7 @@
 			// "https": true,
 			"proxy": {
 				"/api": {
-					// "target": "http://10.30.102.212:8080",
-					// "target" : "http://58.221.199.248:18000",
-					"target": "https://test-zbgj-api.uzigood.tech",
+					"target": "",
 					"changeOrigin": true, //是否跨域
 					"secure": true, // 设置支持https协议的代理
 					"pathRewrite": {

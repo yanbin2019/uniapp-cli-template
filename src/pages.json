@@ -2,15 +2,16 @@
 	"easycom": {
 		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
 	},
-	"pages": [{
-			"path": "pages/whiteList/login/index",
-			"name": "login",
-			"remark": "登录页"
-		},
+	"pages": [
 		{
 			"path": "pages/home/index",
 			"name": "home",
 			"remark": "首页"
+		},
+		{
+			"path": "pages/whiteList/login/index",
+			"name": "login",
+			"remark": "登录页"
 		},
 		{
 			"path": "pages/404/404",
