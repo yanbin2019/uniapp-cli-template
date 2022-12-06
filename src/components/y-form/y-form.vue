@@ -37,7 +37,9 @@ export default {
   },
   computed: {
     handelAttr() {
-      console.log('this.formSchema.schema')
+
+      if (!this.formSchema) return
+      console.log('this.formSchema')
       this.formSchema.schema.map((item) => {
         this.formModel[item.fieId] = item.default
         this.defaultForm[item.fieId] = item.default
@@ -60,10 +62,10 @@ export default {
       const data = {
         ...this.$attrs,
         ...this.formSchema,
-        model: this.formModel
+        model: this.formModel,
+        labelWidth: this.formSchema.labelWidth || 'auto'
       }
-      this.$refs.schemaForm.setRules(this.formSchema.rules)
-      // console.log('this.formSchema', data, this.formSchema, this.formModel)
+      console.log('this.formSchema', data, this.formSchema, this.formModel)
       return data
     }
   },

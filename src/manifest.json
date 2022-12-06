@@ -16,7 +16,7 @@
 			// "https": true,
 			"proxy": {
 				"/api": {
-					"target": "",
+					"target": "http://localhost:8080",
 					"changeOrigin": true, //是否跨域
 					"secure": true, // 设置支持https协议的代理
 					"pathRewrite": {

@@ -1,12 +1,9 @@
 <template>
   <view class="datetime" @tap="show = true">
-    <!-- <u-input :value="value" disabled disabledColor="#ffffff" placeholder="请输入">
-			<u-icon slot="suffix" name="calendar" size="20" color="#B3B3B3"></u-icon>
-		</u-input> -->
     <u-input
       disabled
       disabledColor="#ffffff"
-      :border="isBorder"
+      :border="border"
       placeholder="请选择日期"
       :value="value"
     >
@@ -38,10 +35,10 @@ export default {
       type: String,
       default: ''
     },
-    isBorder: {
+    border: {
       type: String,
-      // default: "surround"
-      default: "none"
+      default: "surround"
+      // default: "none"
     }
   },
   watch: {

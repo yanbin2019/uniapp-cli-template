@@ -69,7 +69,7 @@ import phonePng from "@/pages/whiteList/image/phone.png";
 import {
   rules
 } from "@/pages/whiteList/rules";
-import logoPng from "@/static/logo.png";
+
 export default {
   components: {
     WeChat,
@@ -78,7 +78,7 @@ export default {
   },
   data() {
     return {
-      logoPng,
+
       phonePng,
       keyPng,
       codeShow: false,
